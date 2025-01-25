@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>HTML Basics</h1>
+        <p>Learn the foundation of web development with HTML!</p>
+    </header>
+    <main>
+        <section>
+            <h2>What is HTML?</h2>
+            <p>HTML (HyperText Markup Language) is the standard language for creating webpages. It uses tags to define the structure of your content.</p>
+        </section>
+        <section>
+            <h2>Common HTML Tags</h2>
+            <ul>
+                <li><strong>&lt;html&gt;:</strong> The root element of the document.</li>
+                <li><strong>&lt;head&gt;:</strong> Contains metadata about the webpage.</li>
+                <li><strong>&lt;body&gt;:</strong> Contains the visible content of the webpage.</li>
+                <li><strong>&lt;h1&gt; to &lt;h6&gt;:</strong> Heading tags for titles.</li>
+                <li><strong>&lt;p&gt;:</strong> Paragraph tag for text.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Example Code</h2>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My First Webpage&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, World!&lt;/h1&gt;
+        &lt;p&gt;This is my first webpage.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </section>
+        <section>
+            <h2>Quiz: Test Your Knowledge</h2>
+            <p>Which tag is used to create a paragraph in HTML?</p>
+            <form>
+                <input type="radio" name="quiz" id="option1"> <label for="option1">&lt;h1&gt;</label><br>
+                <input type="radio" name="quiz" id="option2"> <label for="option2">&lt;p&gt;</label><br>
+                <input type="radio" name="quiz" id="option3"> <label for="option3">&lt;a&gt;</label><br>
+                <button type="button" onclick="checkAnswer('quiz1', 'option2', 'quiz-result')">Submit</button>
+                <p id="quiz-result"></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Built by Pedro Chikamso</p>
+        <p>Contact me on <a href="https://wa.me/2349027175271">WhatsApp</a></p>
+    </footer>
+</body>
+</html>
