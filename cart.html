@@ -7,25 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>Your Shopping Cart</h1>
+    <header class="header">
+        <div class="header-container">
+            <h1 class="brand">Futuristic Slippers</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section class="cart">
-        <h2>Items in Your Cart</h2>
-        <div id="cart-items"></div>
-        <div id="total">
-            <h3>Total: ₦<span id="total-price">0</span></h3>
+
+    <section class="cart-section">
+        <div class="cart-item">
+            <img src="slipper1.jpg" alt="Slipper 1">
+            <div class="cart-info">
+                <h3>Slipper 1</h3>
+                <p class="price">₦12,000</p>
+                <input type="number" value="1" class="quantity">
+                <button class="remove-item" onclick="removeItem('Slipper 1')">Remove</button>
+            </div>
         </div>
-        <button onclick="clearCart()">Clear Cart</button>
-        <button onclick="checkout()">Proceed to Checkout</button>
+
+        <!-- Repeat for other items in the cart -->
+
+        <div class="checkout-container">
+            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
     </section>
+
     <footer>
         <p>Built by Pedro Chikamso</p>
     </footer>
