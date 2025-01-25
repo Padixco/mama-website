@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Your Shopping Cart</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="cart">
+        <h2>Items in Your Cart</h2>
+        <div id="cart-items"></div>
+        <div id="total">
+            <h3>Total: ₦<span id="total-price">0</span></h3>
+        </div>
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="checkout()">Proceed to Checkout</button>
+    </section>
+    <footer>
+        <p>Built by Pedro Chikamso</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
